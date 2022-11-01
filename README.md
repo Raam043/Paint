@@ -6,7 +6,7 @@ Windows 95, 98, and XP were the golden years of Paint. You had a tool box and a 
 
 Just run the below Docker command to access the paint web application from **[My DockerHub Account](https://hub.docker.com/u/raam043)**
 ```sh
-docker run --name paint -d -p 80:80 raam043/
+docker run --name paint -d -p 80:80 raam043/web-paint
 ```
 
 To Run cutomized app > Release new Linux server and install Docker & Git
