@@ -26,4 +26,22 @@ Make app directory and add Application files using git clone
 rm -rf /opt/paint/
 mkdir /opt/paint
 cd /opt/paint
-git clone 
+git clone https://github.com/Raam043/Paint.git
+```
+Add Dockerfile
+
+vi Dockerfile
+
+```sh
+FROM nginx
+COPY ./Paint/  /usr/share/nginx/html/
+```
+
+Run Docker commands to run application on container
+```sh
+docker stop paint
+docker rm -f paint
+docker image rm -f paint
+docker build -t paint .
+docker run --name paint -d -p 80:80 paint
+```
